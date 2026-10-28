@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дәрігерлер | MedBook</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fc;
+            color: #222;
+        }
+
+        header {
+            background: #2563eb;
+            color: white;
+            padding: 22px 8%;
+        }
+
+        header h1 {
+            margin-bottom: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .intro {
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        .intro h2 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        .doctors {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+            padding: 20px 8% 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .avatar {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            margin: 8px 0;
+            color: #555;
+        }
+
+        .card button {
+            margin-top: 15px;
+            padding: 12px 18px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .card button:hover {
+            background: #1d4ed8;
+        }
+
+        #message {
+            text-align: center;
+            padding: 0 15px 25px;
+            color: #15803d;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 20px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 12px 5px 0;
+            }
+
+            .doctors {
+                padding: 15px 20px 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>MedBook</h1>
+        <nav>
+            <a href="index.html">Басты бет</a>
+            <a href="login.html">Жүйеге кіру</a>
+            <a href="doctors.html">Дәрігерлер</a>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h2>Біздің дәрігерлер</h2>
+        <p>Өзіңізге қажетті маманды таңдап, қабылдауға жазылыңыз.</p>
+    </section>
+
+    <section class="doctors">
+
+        <div class="card">
+            <div class="avatar">👨‍⚕️</div>
+            <h3>Айдос Нұрланұлы</h3>
+            <p>Терапевт</p>
+            <p>Жұмыс тәжірибесі: 8 жыл</p>
+            <button onclick="bookDoctor('Айдос Нұрланұлы')">
+                Қабылдауға жазылу
+            </button>
+        </div>
+
+        <div class="card">
+            <div class="avatar">👩‍⚕️</div>
+            <h3>Аружан Серікқызы</h3>
+            <p>Кардиолог</p>
+            <p>Жұмыс тәжірибесі: 6 жыл</p>
+            <button onclick="bookDoctor('Аружан Серікқызы')">
+                Қабылдауға жазылу
+            </button>
+        </div>
+
+        <div class="card">
+            <div class="avatar">👨‍⚕️</div>
+            <h3>Данияр Ермекұлы</h3>
+            <p>Невролог</p>
+            <p>Жұмыс тәжірибесі: 5 жыл</p>
+            <button onclick="bookDoctor('Данияр Ермекұлы')">
+                Қабылдауға жазылу
+            </button>
+        </div>
+
+    </section>
+
+    <p id="message"></p>
+
+    <footer>
+        <p>© 2026 MedBook — Дәрігерге жазылу жүйесі</p>
+    </footer>
+
+    <script>
+        function bookDoctor(name) {
+            document.getElementById("message").textContent =
+                name + " дәрігері таңдалды. Нақты жазылу үшін сервер қажет.";
+        }
+    </script>
+
+</body>
+</html>
