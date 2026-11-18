@@ -1,0 +1,4 @@
+<?php $page_title='Басты бет'; require 'includes/header.php'; ?>
+<section class="hero"><div><span class="eyebrow">Онлайн қабылдау</span><h1>Дәрігерге жазылу оңай әрі ыңғайлы</h1><p>Дәрігерді, күнді және уақытты таңдап, қабылдауға онлайн жазылыңыз.</p><a class="btn" href="<?= logged_in() ? 'appointment_create.php' : 'register.php' ?>">Қабылдауға жазылу</a></div><div class="hero-art">✚<small>Сіздің денсаулығыңыз — біздің назарымызда</small></div></section>
+<section class="features"><article class="card"><h3>1. Тіркелу</h3><p>Аккаунт ашып, жүйеге кіріңіз.</p></article><article class="card"><h3>2. Дәрігер таңдау</h3><p>Маман мен ыңғайлы уақытты белгілеңіз.</p></article><article class="card"><h3>3. Басқару</h3><p>Жазылуды қараңыз, өзгертіңіз немесе жойыңыз.</p></article></section>
+<?php require 'includes/footer.php'; ?>

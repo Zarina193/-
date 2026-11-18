@@ -1,0 +1,3 @@
+<?php require_once __DIR__ . '/functions.php'; ?>
+<!doctype html><html lang="kk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title><?= e($page_title ?? 'Дәрігерге жазылу') ?></title><link rel="stylesheet" href="assets/style.css"></head>
+<body><header class="top"><div class="wrap nav"><a class="logo" href="index.php">✚ MedBooking</a><nav><a href="index.php">Басты бет</a><?php if (logged_in()): ?><a href="appointments.php">Менің жазылуларым</a><span><?= e($_SESSION['user_name'] ?? '') ?></span><a href="logout.php">Шығу</a><?php else: ?><a href="login.php">Кіру</a><a href="register.php">Тіркелу</a><?php endif; ?></nav></div></header><main class="wrap">
