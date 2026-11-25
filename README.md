@@ -1,4 +1,4 @@
-#сайт сілтемесі http://localhost/doctor_booking/?utm_source=chatgpt.com
+#сайт сілтемесі http://localhost/doctor_booking/
 
 # Дәрігерге жазылу жүйесі
 
