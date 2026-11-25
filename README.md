@@ -1,4 +1,4 @@
-#сайт сілтемесі https://zarina193.github.io/-/
+#сайт сілтемесі http://localhost/doctor_booking/?utm_source=chatgpt.com
 
 # Дәрігерге жазылу жүйесі
 
